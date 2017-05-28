@@ -9,6 +9,7 @@
 
 #import "NDLCoordinateQuadTree.h"
 #import "NDLClusterAnnotation.h"
+#import "TBQuadTree.h"
 
 TBQuadTreeNodeData TBDataFromDataDict(NSDictionary *dataDict)
 {

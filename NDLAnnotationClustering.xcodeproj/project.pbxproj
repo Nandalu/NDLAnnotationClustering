@@ -10,9 +10,9 @@
 		0454AA151ED9112D00B00784 /* NDLAnnotationClustering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454AA0B1ED9112D00B00784 /* NDLAnnotationClustering.framework */; };
 		0454AA1A1ED9112D00B00784 /* NDLAnnotationClusteringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454AA191ED9112D00B00784 /* NDLAnnotationClusteringTests.m */; };
 		0454AA1C1ED9112D00B00784 /* NDLAnnotationClustering.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454AA0E1ED9112D00B00784 /* NDLAnnotationClustering.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0454AA2B1ED9114F00B00784 /* NDLClusterAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454AA251ED9114F00B00784 /* NDLClusterAnnotation.h */; };
+		0454AA2B1ED9114F00B00784 /* NDLClusterAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454AA251ED9114F00B00784 /* NDLClusterAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0454AA2C1ED9114F00B00784 /* NDLClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454AA261ED9114F00B00784 /* NDLClusterAnnotation.m */; };
-		0454AA2D1ED9114F00B00784 /* NDLCoordinateQuadTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454AA271ED9114F00B00784 /* NDLCoordinateQuadTree.h */; };
+		0454AA2D1ED9114F00B00784 /* NDLCoordinateQuadTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454AA271ED9114F00B00784 /* NDLCoordinateQuadTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0454AA2E1ED9114F00B00784 /* NDLCoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454AA281ED9114F00B00784 /* NDLCoordinateQuadTree.m */; };
 		0454AA2F1ED9114F00B00784 /* TBQuadTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454AA291ED9114F00B00784 /* TBQuadTree.h */; };
 		0454AA301ED9114F00B00784 /* TBQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454AA2A1ED9114F00B00784 /* TBQuadTree.m */; };
@@ -353,7 +353,7 @@
 				INFOPLIST_FILE = NDLAnnotationClustering/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "$(PROJECT_DIR)/NDLAnnotationClustering/module.modulemap";
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = nandalu.NDLAnnotationClustering;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -372,7 +372,7 @@
 				INFOPLIST_FILE = NDLAnnotationClustering/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "$(PROJECT_DIR)/NDLAnnotationClustering/module.modulemap";
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = nandalu.NDLAnnotationClustering;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

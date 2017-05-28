@@ -7,6 +7,17 @@ A drop-in map annotation clustering solution, modified from [TBAnnotationCluster
 
 iOS 9 or later, but earlier iOS version may work.
 
+## Add to Your Project
+
+### Carthage
+
+#### Cartfile
+```
+github "Nandalu/NDLAnnotationClustering"
+```
+
+Follow instructions on [Carthage](https://github.com/Carthage/Carthage).
+
 ## How to Use
 
 ### Input
