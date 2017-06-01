@@ -9,6 +9,19 @@ iOS 9 or later, but earlier iOS version may work.
 
 ## Add to Your Project
 
+### CocoaPods
+
+#### Podfile
+
+In light of [this discussion](https://github.com/CocoaPods/CocoaPods/issues/4989#issuecomment-193772935), we encourage this form:
+
+```
+pod 'NDLAnnotationClustering', :git => 'https://github.com/Nandalu/NDLAnnotationClustering'
+```
+
+Run `pod install`. For first time CocoaPods user, run `pod init` to generate Podfile template automatically.
+
+
 ### Carthage
 
 #### Cartfile
