@@ -31,6 +31,21 @@ github "Nandalu/NDLAnnotationClustering"
 
 Follow instructions on [Carthage](https://github.com/Carthage/Carthage).
 
+### Git Submodule
+
+Add as submodule:
+
+```
+git submodule add https://github.com/Nandalu/NDLAnnotationClustering
+```
+
+Then manually add to your project, like "Apps with Multiple Xcode Projects" as follows:
+
+1. Drag `NDLAnnotationClustering.xcodeproj` into your project.
+2. Project settings - Targets - General - Embedded Binaries: add `NDLAnnotationClustering.frameworkiOS`
+
+See more ways on Apple's [Technical Note TN2435: Embedding Frameworks In An App](https://developer.apple.com/library/content/technotes/tn2435/).
+
 ## How to Use
 
 ### Input
