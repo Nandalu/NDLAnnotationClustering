@@ -10,9 +10,7 @@
 #import <MapKit/MapKit.h>
 
 #import "NDLClusterAnnotationView.h"
-
-#import "NDLClusterAnnotation.h"
-#import "NDLCoordinateQuadTree.h"
+#import <NDLAnnotationClustering/NDLAnnotationClustering.h>
 
 static NSString *const NDLAnnotatioViewReuseID = @"NDLAnnotatioViewReuseID";
 

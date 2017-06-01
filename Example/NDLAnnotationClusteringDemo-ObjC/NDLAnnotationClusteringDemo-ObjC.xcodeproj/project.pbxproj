@@ -7,16 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04724DD61EDFFBFB00FD62EE /* NDLAnnotationClustering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04724DD31EDFFBEF00FD62EE /* NDLAnnotationClustering.framework */; };
 		04CAC15F1ECD47A6009FB200 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC15E1ECD47A6009FB200 /* main.m */; };
 		04CAC1621ECD47A6009FB200 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC1611ECD47A6009FB200 /* AppDelegate.m */; };
 		04CAC1651ECD47A6009FB200 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC1641ECD47A6009FB200 /* ViewController.m */; };
 		04CAC16A1ECD47A6009FB200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC1691ECD47A6009FB200 /* Assets.xcassets */; };
 		04CAC16D1ECD47A6009FB200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC16B1ECD47A6009FB200 /* LaunchScreen.storyboard */; };
-		04D72FF61ED9279400F2066D /* NDLClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D72FF11ED9279400F2066D /* NDLClusterAnnotation.m */; };
-		04D72FF71ED9279400F2066D /* NDLCoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D72FF31ED9279400F2066D /* NDLCoordinateQuadTree.m */; };
-		04D72FF81ED9279400F2066D /* TBQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D72FF51ED9279400F2066D /* TBQuadTree.m */; };
 		04D72FFD1ED928BF00F2066D /* NDLClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D72FFC1ED928BF00F2066D /* NDLClusterAnnotationView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04724DD21EDFFBEF00FD62EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04724DCD1EDFFBEF00FD62EE /* NDLAnnotationClustering.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0454AA0B1ED9112D00B00784;
+			remoteInfo = NDLAnnotationClustering;
+		};
+		04724DD41EDFFBEF00FD62EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04724DCD1EDFFBEF00FD62EE /* NDLAnnotationClustering.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0454AA141ED9112D00B00784;
+			remoteInfo = NDLAnnotationClusteringTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		04D72FEE1ED9276300F2066D /* Embed Frameworks */ = {
@@ -32,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04724DCD1EDFFBEF00FD62EE /* NDLAnnotationClustering.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NDLAnnotationClustering.xcodeproj; path = ../../../NDLAnnotationClustering.xcodeproj; sourceTree = "<group>"; };
 		04CAC15A1ECD47A6009FB200 /* NDLAnnotationClusteringDemo-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NDLAnnotationClusteringDemo-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CAC15E1ECD47A6009FB200 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04CAC1601ECD47A6009FB200 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,12 +57,6 @@
 		04CAC1691ECD47A6009FB200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CAC16C1ECD47A6009FB200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CAC16E1ECD47A6009FB200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04D72FF01ED9279400F2066D /* NDLClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NDLClusterAnnotation.h; path = ../../../NDLAnnotationClustering/NDLClusterAnnotation.h; sourceTree = "<group>"; };
-		04D72FF11ED9279400F2066D /* NDLClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NDLClusterAnnotation.m; path = ../../../NDLAnnotationClustering/NDLClusterAnnotation.m; sourceTree = "<group>"; };
-		04D72FF21ED9279400F2066D /* NDLCoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NDLCoordinateQuadTree.h; path = ../../../NDLAnnotationClustering/NDLCoordinateQuadTree.h; sourceTree = "<group>"; };
-		04D72FF31ED9279400F2066D /* NDLCoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NDLCoordinateQuadTree.m; path = ../../../NDLAnnotationClustering/NDLCoordinateQuadTree.m; sourceTree = "<group>"; };
-		04D72FF41ED9279400F2066D /* TBQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBQuadTree.h; path = ../../../NDLAnnotationClustering/TBQuadTree.h; sourceTree = "<group>"; };
-		04D72FF51ED9279400F2066D /* TBQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBQuadTree.m; path = ../../../NDLAnnotationClustering/TBQuadTree.m; sourceTree = "<group>"; };
 		04D72FFB1ED928BF00F2066D /* NDLClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDLClusterAnnotationView.h; sourceTree = "<group>"; };
 		04D72FFC1ED928BF00F2066D /* NDLClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDLClusterAnnotationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,12 +66,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04724DD61EDFFBFB00FD62EE /* NDLAnnotationClustering.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04724DCE1EDFFBEF00FD62EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04724DD31EDFFBEF00FD62EE /* NDLAnnotationClustering.framework */,
+				04724DD51EDFFBEF00FD62EE /* NDLAnnotationClusteringTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		04CAC1511ECD47A6009FB200 = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +107,7 @@
 				04CAC1641ECD47A6009FB200 /* ViewController.m */,
 				04D72FFB1ED928BF00F2066D /* NDLClusterAnnotationView.h */,
 				04D72FFC1ED928BF00F2066D /* NDLClusterAnnotationView.m */,
-				04D72FF91ED9279E00F2066D /* NDLAnnotationClustering */,
+				04724DCD1EDFFBEF00FD62EE /* NDLAnnotationClustering.xcodeproj */,
 				04CAC1691ECD47A6009FB200 /* Assets.xcassets */,
 				04CAC16B1ECD47A6009FB200 /* LaunchScreen.storyboard */,
 				04CAC16E1ECD47A6009FB200 /* Info.plist */,
@@ -102,19 +122,6 @@
 				04CAC15E1ECD47A6009FB200 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		04D72FF91ED9279E00F2066D /* NDLAnnotationClustering */ = {
-			isa = PBXGroup;
-			children = (
-				04D72FF01ED9279400F2066D /* NDLClusterAnnotation.h */,
-				04D72FF11ED9279400F2066D /* NDLClusterAnnotation.m */,
-				04D72FF21ED9279400F2066D /* NDLCoordinateQuadTree.h */,
-				04D72FF31ED9279400F2066D /* NDLCoordinateQuadTree.m */,
-				04D72FF41ED9279400F2066D /* TBQuadTree.h */,
-				04D72FF51ED9279400F2066D /* TBQuadTree.m */,
-			);
-			name = NDLAnnotationClustering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +172,35 @@
 			mainGroup = 04CAC1511ECD47A6009FB200;
 			productRefGroup = 04CAC15B1ECD47A6009FB200 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 04724DCE1EDFFBEF00FD62EE /* Products */;
+					ProjectRef = 04724DCD1EDFFBEF00FD62EE /* NDLAnnotationClustering.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				04CAC1591ECD47A6009FB200 /* NDLAnnotationClusteringDemo-ObjC */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04724DD31EDFFBEF00FD62EE /* NDLAnnotationClustering.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NDLAnnotationClustering.framework;
+			remoteRef = 04724DD21EDFFBEF00FD62EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04724DD51EDFFBEF00FD62EE /* NDLAnnotationClusteringTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NDLAnnotationClusteringTests.xctest;
+			remoteRef = 04724DD41EDFFBEF00FD62EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		04CAC1581ECD47A6009FB200 /* Resources */ = {
@@ -189,9 +219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D72FF81ED9279400F2066D /* TBQuadTree.m in Sources */,
-				04D72FF71ED9279400F2066D /* NDLCoordinateQuadTree.m in Sources */,
-				04D72FF61ED9279400F2066D /* NDLClusterAnnotation.m in Sources */,
 				04D72FFD1ED928BF00F2066D /* NDLClusterAnnotationView.m in Sources */,
 				04CAC1651ECD47A6009FB200 /* ViewController.m in Sources */,
 				04CAC1621ECD47A6009FB200 /* AppDelegate.m in Sources */,
