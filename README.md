@@ -1,7 +1,9 @@
 NDLAnnotationClustering
 ======================
 
-A drop-in map annotation clustering solution, modified from [TBAnnotationClustering](https://github.com/thoughtbot/TBAnnotationClustering).
+A drop-in map annotation clustering solution, modified from [TBAnnotationClustering](https://github.com/thoughtbot/TBAnnotationClustering). This framework powers my iOS app [CafeFreelance](https://itunes.apple.com/app/id1194031382?mt=8).
+
+Note: If your app is targeted at iOS 11 or later, we recommend using iOS 11 built-in cluster APIs instead. Check out [WWDC 2017 Session 237: What's New in MapKit](https://developer.apple.com/videos/play/wwdc2017/237/).
 
 ## Requirements
 
@@ -39,12 +41,14 @@ Add as submodule:
 git submodule add https://github.com/Nandalu/NDLAnnotationClustering
 ```
 
-Then manually add to your project, like "Apps with Multiple Xcode Projects" as follows:
+Then manually add project file to your project, like "Apps with Multiple Xcode Projects" as follows:
 
 1. Drag `NDLAnnotationClustering.xcodeproj` into your project.
 2. Project settings - Targets - General - Embedded Binaries: add `NDLAnnotationClustering.frameworkiOS`
 
 See more ways on Apple's [Technical Note TN2435: Embedding Frameworks In An App](https://developer.apple.com/library/content/technotes/tn2435/).
+
+Final words: For optimizing your app size, add source files (rather than project file) directly to your project.
 
 ## How to Use
 
@@ -60,6 +64,12 @@ Init NDLCoordinateQuadTree. Input your data in one-dimensional array `[NSDiction
            completion:(void (^)(void))completion;
 ```
 World: the map region that covers all of your data points. Data points outside the world will _not_ be used.
+
+You may add data later after tree is built:
+```
+- (void)addDataDictArray:(NSArray*)dataDictArray
+              completion:(void (^)(void))completion;
+```
 
 ### Output
 
