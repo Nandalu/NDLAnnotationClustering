@@ -105,6 +105,25 @@ float TBCellSizeForZoomScale(MKZoomScale zoomScale)
     }
 }
 
+- (void)addDataDictArray:(NSArray*)dataDictArray
+              completion:(void (^)(void))completion
+{
+    NSInteger count = dataDictArray.count;
+    TBQuadTreeNodeData *dataArray = malloc(sizeof(TBQuadTreeNodeData) * count);
+    for (NSInteger i = 0; i < count; i++) {
+        NSDictionary *dataDict = dataDictArray[i];
+        dataArray[i] = TBDataFromDataDict(dataDict);
+    }
+
+    for (int i = 0; i < count; i++) {
+        TBQuadTreeNodeInsertData(_root, dataArray[i]);
+    }
+
+    if (completion) {   // in case of nil block inside block = EXC_BAD_ACCESS
+        completion();
+    }
+}
+
 - (NSArray*)clusteredAnnotationsWithinMapRect:(MKMapRect)rect
                                 withZoomScale:(double)zoomScale
 {

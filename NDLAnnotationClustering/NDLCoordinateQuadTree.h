@@ -27,6 +27,9 @@
           worldMaxLng:(CLLocationDegrees)maxLng
            completion:(void (^)(void))completion;
 
+- (void)addDataDictArray:(NSArray*)dataDictArray
+              completion:(void (^)(void))completion;
+
 /// [Output] clusteredAnnotations type: [NDLClusterAnnotation]
 - (NSArray*)clusteredAnnotationsWithinMapRect:(MKMapRect)rect withZoomScale:(double)zoomScale;
 /// [Output] clusteredAnnotationsDataArray type: [[NSDictionary]]
