@@ -59,16 +59,16 @@ float TBCellSizeForZoomScale(MKZoomScale zoomScale)
         case 13:
         case 14:
         case 15:
-            return 64;
+            return 96;
         case 16:
         case 17:
         case 18:
-            return 32;
+            return 48;
         case 19:
-            return 16;
+            return 24;
 
         default:
-            return 88;
+            return 132;
     }
 }
 
@@ -143,7 +143,12 @@ float TBCellSizeForZoomScale(MKZoomScale zoomScale)
     if (!self.root) {
         return nil;
     }
-    double TBCellSize = TBCellSizeForZoomScale(zoomScale);
+    double TBCellSize = 0;
+    if (self.delegate) {
+        TBCellSize = [self.delegate NDLCellSizeForZoomScale:zoomScale];
+    } else {
+        TBCellSize = TBCellSizeForZoomScale(zoomScale);
+    }
     double scaleFactor = zoomScale / TBCellSize;
 
     NSInteger minX = floor(MKMapRectGetMinX(rect) * scaleFactor);

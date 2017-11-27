@@ -10,7 +10,13 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
+@protocol NDLCoordinateQuadTreeDelegate <NSObject>
+- (float)NDLCellSizeForZoomScale:(MKZoomScale)zoomScale;
+@end
+
 @interface NDLCoordinateQuadTree : NSObject
+
+@property (nonatomic, weak) id <NDLCoordinateQuadTreeDelegate> delegate;
 
 /**
     [Input] dataDictArray type: [NSDictionary]
